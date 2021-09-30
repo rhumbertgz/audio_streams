@@ -1,4 +1,4 @@
-group 'dev.mambi.audiostreams'
+group 'dev.mambi.audios_treams'
 version '1.0-SNAPSHOT'
 
 buildscript {
