@@ -8,7 +8,6 @@ public class SwiftAudioStreamsPlugin: NSObject, FlutterPlugin, FlutterStreamHand
   private var outputFormat = AVAudioFormat(commonFormat: AVAudioCommonFormat.pcmFormatInt16, sampleRate: 44100, channels: 2, interleaved: true)
 
   public static func register(with registrar: FlutterPluginRegistrar) {
-    print("Registering AudioStreams plugin ...")
     let channel = FlutterMethodChannel(name: "audio_streams", binaryMessenger: registrar.messenger())
     let eventChannel = FlutterEventChannel(name: "audio", binaryMessenger: registrar.messenger())
     let instance = SwiftAudioStreamsPlugin()
